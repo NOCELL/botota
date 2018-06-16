@@ -1,0 +1,36 @@
+{
+  "name": "botota",
+  "version": "1.0.0",
+  "description": "Module for developing VK.com bots",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha --exit --timeout 10000 --no-warnings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NOCELL/botota.git"
+  },
+  "keywords": [
+    "bot",
+    "bots",
+    "vk",
+    "vk.com",
+    "node",
+    "api"
+  ],
+  "author": "Oleg Zuev @NOCELL",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NOCELL/botota/issues"
+  },
+  "homepage": "https://github.com/NOCELL/botota#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "form-data": "^2.3.2",
+    "fs-extra": "^6.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
