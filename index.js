@@ -2,7 +2,7 @@ const methods = require('./lib/methods')
 
 class Bot{
     constructor (settings) {
-      const { token, v = 5.78, wait = 25, executeTimeout = 25, executePause = 50, lang = 'ru'} = settings
+      const { token, v = 5.80, wait = 25, executeTimeout = 25, executePause = 50, lang = 'ru'} = settings
   
       if(!token) {
         throw new Error('token is required')
