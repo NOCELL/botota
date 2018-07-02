@@ -11,7 +11,7 @@ describe('Utils', () => {
             expect(upload_doc).to.be.instanceof(Buffer)
           })
           it('from file', async () => {
-            const upload_doc = await bot.getBuffer('https://vk.com/images/gift/875/256_1.jpg')
+            const upload_doc = await bot.getBuffer('./test/utils.test.js')
             expect(upload_doc).to.be.instanceof(Buffer)
           })
           it('from buffer', async () => {

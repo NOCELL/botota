@@ -2,7 +2,7 @@ const methods = require('./lib/methods')
 
 class Bot{
     constructor (settings) {
-      const { token, v = 5.80, wait = 25, executeTimeout = 25, executePause = 50, lang = 'ru'} = settings
+      const { token, v = 5.80, wait = 25, executeTimeout = 25, executePause = 50, lang = 'ru', longpoll = true} = settings
   
       if(!token) {
         throw new Error('token is required')
@@ -10,7 +10,7 @@ class Bot{
       
       Object.assign(
         settings,
-        { token, v , wait, executeTimeout, executePause, lang }
+        { token, v , wait, executeTimeout, executePause, lang, longpoll }
       )
       
 
@@ -35,8 +35,9 @@ class Bot{
           .map(([ key, value ]) => ({ [key]: value.bind(this) }))
           .reduce((a, b) => ({ ...a, ...b }), {})
       )
-
-      this.eventListener()
+      if( longpoll === true ){
+          this.eventListener()
+      }
       this.executor()
       
     }
