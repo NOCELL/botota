@@ -2,7 +2,7 @@
   "name": "botota",
   "version": "1.0.0",
   "description": "Module for developing VK.com bots",
-  "main": "test.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha --exit --timeout 10000 --no-warnings"
   },
