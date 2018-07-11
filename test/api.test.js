@@ -39,19 +39,17 @@ describe('api', () => {
     ])
   })
   it('calling execute method via .execute', async () => {
-    var params = {
-      count: 100
-    }
-    var result = await bot.execute('execute', { code: `return API.messages.get(${JSON.stringify(params)});`})
-    expect(result).to.have.deep.property('items')
+    const params = { }
+    const result = await bot.execute('execute', { code: `return API.groups.getById(${JSON.stringify(params)});`})
+    expect(result).is.a('array')
   })
 
   it('calling example method with incorrect options', async () => {
     try{
-      var params = {
-        count: 1000000 //100 is max
+      const params = {
+        group_ids: -1
       }
-      var result = await bot.execute('execute', { code: `return API.messages.get(${JSON.stringify(params)});`})
+      const result = await bot.execute('execute', { code: `return API.groups.getById(${JSON.stringify(params)});`})
       
     }
     catch(e){

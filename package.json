@@ -1,6 +1,6 @@
 {
   "name": "botota",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module for developing VK.com bots",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "node",
     "api"
   ],
-  "author": "Oleg Zuev @NOCELL",
+  "author": "Oleg Zueff",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/NOCELL/botota/issues"
