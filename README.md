@@ -70,16 +70,41 @@ bot.event('group_join', (event) => {
 
 # Events
 
-```
+```javascript
 .event(event_name, callback)
 ```
-Return to callback any [Callback API](https://vk.com/dev/callback_api) event
+Callback any [Callback API](https://vk.com/dev/callback_api) event
 
-```
+```javascript
 .on(callback)
 ```
-Return to callback any incoming message
+Callback any incoming message
 
+```javascript
+.use(callback)
 ```
-.event(event_name, callback)
+Callback any new message
+
+```javascript
+.command(command, callback)
 ```
+Callback any incoming message which starts with command
+
+```javascript
+.mention(callback)
+```
+Callback any incoming message where the group is mentioned
+
+```javascript
+.chat(callback)
+```
+Callback any incoming message from chats
+
+```javascript
+.user(callback)
+```
+Callback any incoming message from users
+
+
+
+
