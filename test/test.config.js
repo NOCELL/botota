@@ -1,7 +1,7 @@
 const botota = require('../index.js')
 
 if(process.env.token === undefined){
-    console.error('Need access token for tests!\nSet the access token to the environment variable "token"\nhttps://vk.com/dev/access_token')
+    console.error('Need access token for tests!\nSet the access token to the environment letiable "token"\nhttps://vk.com/dev/access_token')
     process.exit(-1)
 }
 const bot = new botota.Bot({
