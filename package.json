@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/NOCELL/botota#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "form-data": "^2.3.2",
     "fs-extra": "^6.0.1"
   },
